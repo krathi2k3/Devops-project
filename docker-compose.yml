@@ -1,9 +1,7 @@
-version: '3.8'
-
 services:
   web:
-    image: docker
+    image: simple-web-app
     build: .
     ports:
-      - "8080:80"   # Change 8080 to 8081
+      - "8081:80"  # Change 8080 to 8081 or another port
     restart: always
