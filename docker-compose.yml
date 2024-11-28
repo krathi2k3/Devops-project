@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    image: docker
+    build: .
+    ports:
+      - "8080:80"   # Change 8080 to 8081
+    restart: always
